@@ -77,7 +77,7 @@ public class RankingAdapter extends RecyclerView.Adapter<RankingAdapter.ViewHold
             holder.numberText.setVisibility(View.VISIBLE);
             holder.numberText.setText("NO." + (position + 1));
         }
-        GlideUtil.setPictureWithOutCache(holder.headPic, rankingMessage.getImagePath(), R.drawable.ic_user_default);
+        GlideUtil.setPictureWithOutCache(holder.headPic, rankingMessage.getImagePath(), R.drawable.icon_head);
         holder.name.setText(rankingMessage.getUsername());
         holder.studentId.setText(rankingMessage.getStudentId());
     }

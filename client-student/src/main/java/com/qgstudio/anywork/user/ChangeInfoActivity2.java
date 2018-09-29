@@ -248,7 +248,7 @@ public class ChangeInfoActivity2 extends MVPBaseActivity<UserContract.View, User
 
     @Override
     public void changeImg() {
-        GlideUtil.setPictureWithOutCache(pic, user.getUserId(), R.drawable.ic_user_default);
+        GlideUtil.setPictureWithOutCache(pic, user.getUserId(), R.drawable.icon_head);
     }
 
     private LoadingDialog dialog;

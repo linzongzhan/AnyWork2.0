@@ -112,7 +112,7 @@ public class MyFragment extends Fragment {
         update = (TextView) view.findViewById(R.id.update);
         logout = (TextView) view.findViewById(R.id.logout);
 
-        GlideUtil.setPictureWithOutCache(head, App.getInstance().getUser().getUserId(), R.drawable.ic_user_default);
+        GlideUtil.setPictureWithOutCache(head, App.getInstance().getUser().getUserId(), R.drawable.icon_head);
         feedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

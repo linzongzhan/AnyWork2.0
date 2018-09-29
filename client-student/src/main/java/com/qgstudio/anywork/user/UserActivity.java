@@ -150,7 +150,7 @@ public class UserActivity extends MVPBaseActivity<UserContract.View, UserPresent
         name.setText(user1.getUserName());
         email.setText(user1.getEmail());
         phone.setText(user1.getPhone());
-        GlideUtil.setPictureWithOutCache(pic, user1.getUserId(), R.drawable.ic_user_default);
+        GlideUtil.setPictureWithOutCache(pic, user1.getUserId(), R.drawable.icon_head);
     }
 
 //    private void editFocusable(boolean focusable) {
@@ -295,7 +295,7 @@ public class UserActivity extends MVPBaseActivity<UserContract.View, UserPresent
 
     @Override
     public void changeImg() {
-        GlideUtil.setPictureWithOutCache(pic, user.getUserId(), R.drawable.ic_user_default);
+        GlideUtil.setPictureWithOutCache(pic, user.getUserId(), R.drawable.icon_head);
     }
 
     private LoadingDialog dialog;
