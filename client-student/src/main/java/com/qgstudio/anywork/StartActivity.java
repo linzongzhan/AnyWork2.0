@@ -45,7 +45,7 @@ public class StartActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //获得账号信息
-        User user = getUser();
+        User user =  getUser();
         //自动登录
         login(user.getStudentId(), user.getPassword());
         Log.d("linzongzhan", "onCreate: " + user.getStudentId());
