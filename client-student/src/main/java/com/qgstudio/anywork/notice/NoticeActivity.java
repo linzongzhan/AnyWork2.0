@@ -51,6 +51,7 @@ public class NoticeActivity extends DialogManagerActivity {
     NoticeAdapter adapter;
     NoticeApi noticeApi;
     AtomicInteger pageNum = new AtomicInteger(1);
+    int lastPage = Integer.MAX_VALUE;
 
 
     @Override
@@ -79,6 +80,11 @@ public class NoticeActivity extends DialogManagerActivity {
         refreshLayout.setOnRefreshLoadMoreListener(new OnRefreshLoadMoreListener() {
             @Override
             public void onLoadMore(@NonNull final RefreshLayout refreshLayout) {
+                Map map= (Map) buildRequestParam(true);
+                if (((int)map.get("pageNum")) > lastPage) {
+                    ToastUtil.showToast("没有更多了");
+                    refreshLayout.finishLoadMore();
+                }
                 noticeApi.getNotice(buildRequestParam(true))
                         .subscribeOn(Schedulers.io())
                         .observeOn(AndroidSchedulers.mainThread())
@@ -101,6 +107,11 @@ public class NoticeActivity extends DialogManagerActivity {
                                                 .get("list")
                                         , new TypeToken<List<Notice>>() {
                                         }.getType());
+
+                                lastPage = jsonObjectResponseResult
+                                        .getData()
+                                        .get("lastPage").getAsInt();
+
                                 if (noticeList.isEmpty()) {
                                     ToastUtil.showToast("没有更多了");
                                     refreshLayout.finishLoadMore();

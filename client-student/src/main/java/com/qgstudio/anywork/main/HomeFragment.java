@@ -172,9 +172,12 @@ public class HomeFragment extends MVPBaseFragment<HomeContract.HomeView, HomePre
                 recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
                 recyclerView.setAdapter(adapter);
             } else {
+                recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+                recyclerView.setAdapter(adapter);
                 adapter.list.clear();
                 adapter.list.addAll(notices);
                 adapter.notifyDataSetChanged();
+
             }
         }
     }
