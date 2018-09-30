@@ -1,8 +1,11 @@
 package com.qgstudio.anywork.workout;
 
+import android.app.Activity;
+
 import android.content.Context;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -22,6 +25,7 @@ import com.qgstudio.anywork.dialog.LoadingDialog;
 import com.qgstudio.anywork.exam.ExamActivity;
 import com.qgstudio.anywork.grade.GradeActivity;
 import com.qgstudio.anywork.paper.PaperAdapter;
+import com.qgstudio.anywork.ranking.RankingFragment;
 import com.qgstudio.anywork.utils.GsonUtil;
 import com.qgstudio.anywork.utils.ToastUtil;
 import com.qgstudio.anywork.workout.data.Chapter;
@@ -138,7 +142,18 @@ public class ChapterAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                     }
                     LoadingDialog dialog = new LoadingDialog();
                     dialog.show(((AppCompatActivity) context).getSupportFragmentManager(), "");
-                    intoTestActivity(v.getContext(), testpaper.getTestpaperId(), testpaper.getTestpaperTitle(), 1, dialog,testpaper.getStatus());
+                    intoTestActivity(v.getContext(), testpaper.getTestpaperId(), testpaper.getTestpaperTitle(), 1, dialog, testpaper.getStatus());
+                }
+            });
+            ((CatalogViewHolder) holder).btnRank.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    RankingFragment fragment = RankingFragment.newInstance(testpaper.getTestpaperId());
+                    AppCompatActivity activity = (AppCompatActivity) context;
+                    FragmentTransaction transaction = activity.getSupportFragmentManager().beginTransaction();
+                    transaction.replace(R.id.workout_activity_container, fragment);
+                    transaction.addToBackStack(null);
+                    transaction.commit();
                 }
             });
 
@@ -171,6 +186,8 @@ public class ChapterAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         TextView stateTab;
         @BindView(R.id.card)
         View card;
+        @BindView(R.id.btn_rank)
+        View btnRank;
 
         public CatalogViewHolder(View itemView) {
             super(itemView);
@@ -223,7 +240,7 @@ public class ChapterAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                             }
                             GradeActivity.start(context, socre, GsonUtil.GsonString(results), paperTittle);
                         } else {
-                            ExamActivity.start(context, testpaperId, type,paperTittle,state);
+                            ExamActivity.start(context, testpaperId, type, paperTittle, state);
                         }
                     }
                 });

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.tinkerpatch.sdk:tinkerpatch-android-sdk-1.2.8">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/tinkerpatch-android-sdk-1.2.8.aar/ea963d3f5126ab159a9e9b5785ed1b9e/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/tinkerpatch-android-sdk-1.2.8.aar/ea963d3f5126ab159a9e9b5785ed1b9e/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tinkerpatch.sdk/tinkerpatch-android-sdk/1.2.8/d9c3daba3ee1e904d5d16587fb53b21d5761d484/tinkerpatch-android-sdk-1.2.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -56,7 +56,7 @@ public class WorkoutContainerActivity extends AppCompatActivity {
 
     private void showFragment(WorkoutType type, int classId) {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.add(R.id.workout_activity_container, WorkoutCatalogFragment.newInstance(type, classId));
+        transaction.replace(R.id.workout_activity_container, WorkoutCatalogFragment.newInstance(type, classId));
         transaction.commit();
 
     }
