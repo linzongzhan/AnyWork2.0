@@ -1,4 +1,4 @@
-#Sat Sep 29 21:03:17 CST 2018
-base.0=C\:\\Users\\linzongzhan\\AndroidStudioProjects\\AnyWork\\client-student\\build\\intermediates\\transforms\\dex\\debug\\0
+#Sat Sep 29 22:28:37 CST 2018
+base.0=E\:\\AndroidProject4\\AnyWork2.0\\client-student\\build\\intermediates\\transforms\\dex\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex
