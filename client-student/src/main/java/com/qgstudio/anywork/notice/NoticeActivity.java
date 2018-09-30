@@ -84,6 +84,7 @@ public class NoticeActivity extends DialogManagerActivity {
                 if (((int)map.get("pageNum")) > lastPage) {
                     ToastUtil.showToast("没有更多了");
                     refreshLayout.finishLoadMore();
+                    return;
                 }
                 noticeApi.getNotice(buildRequestParam(true))
                         .subscribeOn(Schedulers.io())
