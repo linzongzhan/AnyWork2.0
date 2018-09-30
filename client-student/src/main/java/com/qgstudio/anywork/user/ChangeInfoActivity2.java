@@ -61,6 +61,9 @@ public class ChangeInfoActivity2 extends MVPBaseActivity<UserContract.View, User
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_info2);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setStatusBarColor(getResources().getColor(R.color.sample_blue));
+        }
         pic = findViewById(R.id.imageView_head);
         name = findViewById(R.id.textView_name);
         studentId = findViewById(R.id.textView_id);

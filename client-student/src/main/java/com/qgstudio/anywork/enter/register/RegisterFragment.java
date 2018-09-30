@@ -82,6 +82,7 @@ public class RegisterFragment extends MVPBaseFragment<RegisterContract.View, Reg
         //可通过 newInstance 为 Fragment 添加参数，保证 Fragment 重建时参数字段不被销毁
         return new RegisterFragment();
     }
+
     @OnClick(R.id.meed_question_register)
     public void clickMeedQuestion() {
         new MeedQuestionFragment().show(getActivity().getFragmentManager(), "");
@@ -181,5 +182,17 @@ public class RegisterFragment extends MVPBaseFragment<RegisterContract.View, Reg
             btnRegister.setEnabled(false);
             btnRegister.setTextColor(getResources().getColor(R.color.text_hint));
         }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        mPresenter.attachView(this);
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        mPresenter.detachView();
     }
 }

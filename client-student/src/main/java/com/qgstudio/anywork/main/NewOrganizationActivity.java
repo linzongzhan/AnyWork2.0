@@ -2,6 +2,7 @@ package com.qgstudio.anywork.main;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
@@ -68,7 +69,9 @@ public class NewOrganizationActivity extends DialogManagerActivity {
 
     private void initView() {
         ButterKnife.bind(this);
-
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setStatusBarColor(getResources().getColor(R.color.sample_blue));
+        }
         mOrganizationApi.getJoinOrganization()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
@@ -126,7 +129,7 @@ public class NewOrganizationActivity extends DialogManagerActivity {
         tvMyOrganization.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final NewOrganizationActivity.DialogCreateHelper helper = new NewOrganizationActivity.DialogCreateHelper(myOrganization);
+                final DialogCreateHelper helper = new DialogCreateHelper(myOrganization);
                 mBaseDialog = helper.create(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

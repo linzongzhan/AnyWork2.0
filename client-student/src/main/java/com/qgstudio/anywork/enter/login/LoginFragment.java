@@ -129,6 +129,17 @@ public class LoginFragment extends MVPBaseFragment<LoginContract.View, LoginPres
         loadingDialog.show(getFragmentManager(), "");
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        mPresenter.attachView(this);
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        mPresenter.detachView();
+    }
 
     @Override
     public void stopLoad() {

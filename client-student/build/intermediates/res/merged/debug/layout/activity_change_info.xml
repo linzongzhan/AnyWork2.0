@@ -105,6 +105,7 @@
         android:background="@null"
         android:textColor="#2F2F2F"
         android:translationZ="2dp"
+        android:textCursorDrawable="@drawable/my_cursor"
         app:layout_constraintBottom_toBottomOf="@+id/textview_mail"
         app:layout_constraintLeft_toLeftOf="@+id/textview_mail"
         app:layout_constraintTop_toTopOf="@+id/textview_mail" />
@@ -117,6 +118,7 @@
         android:background="@null"
         android:textColor="#2F2F2F"
         android:translationZ="2dp"
+        android:textCursorDrawable="@drawable/my_cursor"
         app:layout_constraintBottom_toBottomOf="@+id/textview_phone"
         app:layout_constraintLeft_toLeftOf="@+id/textview_phone"
         app:layout_constraintTop_toTopOf="@+id/textview_phone" />
