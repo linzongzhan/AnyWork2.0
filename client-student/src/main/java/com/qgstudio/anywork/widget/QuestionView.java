@@ -129,7 +129,10 @@ public class QuestionView extends FrameLayout {
      */
     public void setQuestion(Question question, int pos, int sum) {
         mQuestion = question;
-
+        if (question.getEnumType() == Question.Type.UNKNOWN) {
+            ToastUtil.showToast(Question.Type.UNKNOWN.string);
+            return;
+        }
 
         setAnswerBottom();
 

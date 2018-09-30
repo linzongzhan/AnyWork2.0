@@ -21,6 +21,7 @@
             android:layout_width="12dp"
             android:layout_height="12dp"
             android:layout_gravity="center"
+            android:clickable="false"
             android:background="@drawable/icon_account_edit"/>
     </FrameLayout>
 

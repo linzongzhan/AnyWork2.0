@@ -112,7 +112,7 @@ public class HomeFragment extends MVPBaseFragment<HomeContract.HomeView, HomePre
     @OnClick(R.id.btn_my_class)
     public void clickMyClass() {
         WebSocketHolder.getDefault().onMessage(null, "{ \"messageId\": 123,\"type\": 2,\"title\": \"标题\",\"content\": \"内容\",\"publisher\": \"发布人\",\"status\": 0}");
-        if (btnMyClass.getTag() == null) {
+        if (((Organization)btnMyClass.getTag()).getOrganizationId() == -1) {
             startActivity(new Intent(getActivity(), NewOrganizationActivity.class));
         }
     }

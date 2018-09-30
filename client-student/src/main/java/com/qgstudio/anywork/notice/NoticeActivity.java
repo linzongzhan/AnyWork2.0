@@ -91,6 +91,7 @@ public class NoticeActivity extends DialogManagerActivity {
                             @Override
                             public void onError(Throwable e) {
                                 refreshLayout.finishLoadMore();
+                                ToastUtil.showToast("没有更多了");
                             }
 
                             @Override
