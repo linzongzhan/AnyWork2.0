@@ -15,6 +15,7 @@ import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -85,7 +86,7 @@ public class WorkoutCatalogFragment extends Fragment {
         }
 
         initToolbar();
-        viewModel.getChapter();
+        //viewModel.getChapter();
         return view;
     }
 
@@ -117,8 +118,6 @@ public class WorkoutCatalogFragment extends Fragment {
     public void onChapterGet(List<? extends WorkoutInfo> list) {
         if (adapter == null) {
             adapter = new ChapterAdapter(list, getActivity());
-            recyclerView.setAdapter(adapter);
-            recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
             adapter.setOnChapterClickListener(new ChapterAdapter.OnChapterClickListener() {
                 @Override
                 public void onChapterClick(int chapterID) {
@@ -127,27 +126,32 @@ public class WorkoutCatalogFragment extends Fragment {
                 }
             });
         } else {
+
             adapter.datas.clear();
             adapter.datas.addAll(list);
             adapter.notifyDataSetChanged();
         }
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
     }
 
     public void onCatalogGet(List<? extends WorkoutInfo> list) {
+
         if (adapter == null) {
             adapter = new ChapterAdapter(list, getActivity());
-            recyclerView.setAdapter(adapter);
-            recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         } else {
             if (list == null) {
                 ToastUtil.showToast("无题目");
             } else {
+
                 adapter.datas.clear();
                 adapter.datas.addAll(list);
                 adapter.notifyDataSetChanged();
             }
 
         }
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         adapter.setTest(type == WorkoutType.EXAM);
     }
 
@@ -161,6 +165,8 @@ public class WorkoutCatalogFragment extends Fragment {
             } else {
                 viewModel.getChapter();
             }
+        } else {
+            viewModel.getChapter();
         }
 
     }

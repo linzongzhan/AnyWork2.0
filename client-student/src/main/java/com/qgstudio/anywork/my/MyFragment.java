@@ -112,7 +112,6 @@ public class MyFragment extends Fragment {
         update = (TextView) view.findViewById(R.id.update);
         logout = (TextView) view.findViewById(R.id.logout);
 
-        GlideUtil.setPictureWithOutCache(head, App.getInstance().getUser().getUserId(), R.drawable.icon_head);
         feedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -181,6 +180,12 @@ public class MyFragment extends Fragment {
 
 //        //将头像设置为背景
 //        GlideUtil.setPictureWithOutCacheWithBlur(viewBackground, App.getInstance().getUser().getUserId(), R.drawable.ic_user_default, getActivity());
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        GlideUtil.setPictureWithOutCache(head, App.getInstance().getUser().getUserId(), R.drawable.icon_head);
     }
 
     @Override

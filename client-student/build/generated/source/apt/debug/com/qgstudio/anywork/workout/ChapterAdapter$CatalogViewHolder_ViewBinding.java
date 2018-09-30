@@ -23,6 +23,7 @@ public class ChapterAdapter$CatalogViewHolder_ViewBinding implements Unbinder {
     target.tvCatalogTime = Utils.findRequiredViewAsType(source, R.id.catalog_time, "field 'tvCatalogTime'", TextView.class);
     target.stateTab = Utils.findRequiredViewAsType(source, R.id.tv_workout_state_tab, "field 'stateTab'", TextView.class);
     target.card = Utils.findRequiredView(source, R.id.card, "field 'card'");
+    target.btnRank = Utils.findRequiredView(source, R.id.btn_rank, "field 'btnRank'");
   }
 
   @Override
@@ -36,5 +37,6 @@ public class ChapterAdapter$CatalogViewHolder_ViewBinding implements Unbinder {
     target.tvCatalogTime = null;
     target.stateTab = null;
     target.card = null;
+    target.btnRank = null;
   }
 }

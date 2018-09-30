@@ -21,6 +21,8 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.mobile.utils.ActivityManager;
+import com.mobile.utils.ActivityUtilsKt;
 import com.qgstudio.anywork.App;
 import com.qgstudio.anywork.R;
 import com.qgstudio.anywork.common.DialogManagerActivity;
@@ -38,6 +40,7 @@ import com.qgstudio.anywork.notice.data.OnlineCount;
 import com.qgstudio.anywork.ranking.RankingFragment;
 import com.qgstudio.anywork.user.UserActivity;
 import com.qgstudio.anywork.user.UserApi;
+import com.qgstudio.anywork.utils.ActivityUtil;
 import com.qgstudio.anywork.utils.GlideUtil;
 import com.qgstudio.anywork.utils.SessionMaintainUtil;
 import com.qgstudio.anywork.utils.ToastUtil;
@@ -49,6 +52,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import de.hdodenhof.circleimageview.CircleImageView;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
 import rx.Observer;
 import rx.Scheduler;
 import rx.android.schedulers.AndroidSchedulers;
@@ -127,20 +132,13 @@ public class HomeActivity extends DialogManagerActivity implements BottomNavigat
 
     @Override
     public void onBackPressed() {
-        BaseDialog.Builder builder = new BaseDialog.Builder(this);
-        BaseDialog baseDialog = builder.cancelTouchout(false)
-                .title("提示")
-                .content("确定要退出当前账号吗？")
-                .setNegativeListener("确认", new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        logout();
-                        HomeActivity.super.onBackPressed();
-                    }
-                })
-                .setPositiveListener("取消", null)
-                .build();
-        baseDialog.show();
+        ActivityManager.INSTANCE.doubleExit(2000, "再按一次退出", new Function0<Unit>() {
+            @Override
+            public Unit invoke() {
+                finish();
+                return null;
+            }
+        });
     }
 
     @Override

@@ -52,10 +52,26 @@ public class RankingFragment extends Fragment {
     public RankingFragment() {
     }
 
+    public static RankingFragment newInstance(int testpaperId) {
+        RankingFragment fragment = new RankingFragment();
+        Bundle bundle = new Bundle();
+        bundle.putInt("TESTPAPER_ID", testpaperId);
+        fragment.setArguments(bundle);
+        return fragment;
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Bundle bundle = getArguments();
+        if (bundle != null) {
+            testpaperId = bundle.getInt("TESTPAPER_ID");
+        }
+    }
+
     /**
-     * 设置要获取对应id的试卷的排行榜
-     *
      * @param testpaperId 试卷id
+     * @deprecated 设置要获取对应id的试卷的排行榜
      */
     public void setTestpaperId(int testpaperId) {
         this.testpaperId = testpaperId;
@@ -65,7 +81,6 @@ public class RankingFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_ranking, container, false);
-
         try {
             initRankingList(rootView);
             initSpinner(rootView);
