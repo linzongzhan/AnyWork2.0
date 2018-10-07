@@ -79,7 +79,7 @@ NoticeAdapter extends RecyclerView.Adapter<NoticeAdapter.ViewHolder> {
                     public void onClick(View v) {
 
 
-//                        mBaseDialog.cancel();
+                        mBaseDialog.cancel();
 //                        if (mJoinOrganizationListener != null) {
 //                                int id = organization.getOrganizationId();
 //                                String password = helper.edi.getText().toString();
