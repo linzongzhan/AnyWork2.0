@@ -71,12 +71,13 @@ NoticeAdapter extends RecyclerView.Adapter<NoticeAdapter.ViewHolder> {
 //                dialog.show();
 
                 final NoticeAdapter.DialogCreateHelper helper = new NoticeAdapter.DialogCreateHelper(notice);
+                helper.tvTime.setText(notice.createTime);
+                helper.tvContent.setText(notice.content);
+                helper.tvName.setText(notice.publisher);
                 final NewBaseDialog mBaseDialog = helper.create(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        helper.tvTime.setText(notice.createTime);
-                        helper.tvContent.setText(notice.content);
-                        helper.tvName.setText(notice.publisher);
+
 
 //                        mBaseDialog.cancel();
 //                        if (mJoinOrganizationListener != null) {
