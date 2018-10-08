@@ -1,5 +1,6 @@
 package com.qgstudio.anywork.notice;
 
+import android.annotation.NonNull;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -45,6 +46,7 @@ public class
 NoticeAdapter extends RecyclerView.Adapter<NoticeAdapter.ViewHolder> {
     public List<Notice> list;
     Context context;
+    NewBaseDialog mBaseDialog;
 
 
     public NoticeAdapter(List<Notice> list, Context context) {
@@ -74,10 +76,10 @@ NoticeAdapter extends RecyclerView.Adapter<NoticeAdapter.ViewHolder> {
                 helper.tvTime.setText(notice.createTime);
                 helper.tvContent.setText(notice.content);
                 helper.tvName.setText(notice.publisher);
-                final NewBaseDialog mBaseDialog = helper.create(new View.OnClickListener() {
+
+                mBaseDialog = helper.create(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
 
                         mBaseDialog.cancel();
 //                        if (mJoinOrganizationListener != null) {
@@ -164,6 +166,7 @@ NoticeAdapter extends RecyclerView.Adapter<NoticeAdapter.ViewHolder> {
             ButterKnife.bind(this, view);
         }
     }
+
 
     private Object buildReadRequestParam(int id) {
         HashMap info = new HashMap();
