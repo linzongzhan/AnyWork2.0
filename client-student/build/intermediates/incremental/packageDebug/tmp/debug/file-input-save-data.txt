@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Oct 08 20:13:27 CST 2018
+#Wed Oct 10 18:38:37 CST 2018
 7.path=lib/x86_64/libBugly.so
 2.base=D\:\\AndroidStudioProjects\\AnyWork\\client-student\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
 5.set=NATIVE_RESOURCE

@@ -1,6 +1,6 @@
 package com.qgstudio.anywork.notice;
 
-import android.annotation.NonNull;
+//import android.annotation.NonNull;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;

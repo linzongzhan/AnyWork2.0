@@ -79,7 +79,6 @@ public class HomeActivity extends DialogManagerActivity implements BottomNavigat
         setContentView(R.layout.activity_main);
 
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
 
         initView();
         registerBroadcast();
