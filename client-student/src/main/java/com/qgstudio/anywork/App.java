@@ -65,6 +65,7 @@ public class App extends Application {
         Beta.canShowUpgradeActs.add(HomeActivity.class);
         Beta.autoInit = true;
         Beta.autoCheckUpgrade = true;
+        Beta.upgradeCheckPeriod = 60 * 1000;
         Bugly.init(getApplicationContext(), "9cc1e08f57", true);
 
         if (BuildConfig.TINKER_ENABLE) {

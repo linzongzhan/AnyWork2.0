@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\linzongzhan\\AndroidStudioProjects\\AnyWork\\client-student\\build\\intermediates\\res\\merged\\debug\\values-zh\\values-zh.xml",
+            "outputFile": "D:\\AndroidStudioProjects\\AnyWork\\client-student\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
             "map": [
                 {
                     "source": "C:\\Users\\linzongzhan\\.gradle\\caches\\transforms-1\\files-1.1\\SmartRefreshLayout-1.1.0-alpha-14.aar\\3013a25961f0f10d85b246a0a615f709\\res\\values-zh\\values-zh.xml",
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\linzongzhan\\AndroidStudioProjects\\AnyWork\\client-student\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
+            "outputFile": "D:\\AndroidStudioProjects\\AnyWork\\client-student\\build\\intermediates\\res\\merged\\debug\\values-zh\\values-zh.xml",
             "map": [
                 {
                     "source": "C:\\Users\\linzongzhan\\.gradle\\caches\\transforms-1\\files-1.1\\SmartRefreshLayout-1.1.0-alpha-14.aar\\3013a25961f0f10d85b246a0a615f709\\res\\values-zh\\values-zh.xml",

@@ -29,6 +29,7 @@ import com.qgstudio.anywork.user.ChangePasswordActivity;
 import com.qgstudio.anywork.user.UserActivity;
 import com.qgstudio.anywork.utils.GlideUtil;
 import com.qgstudio.anywork.utils.ToastUtil;
+import com.tencent.bugly.beta.Beta;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -165,7 +166,7 @@ public class MyFragment extends Fragment {
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ToastUtil.showToast("此功能暂未开放");
+                Beta.checkUpgrade();
             }
         });
         logout.setOnClickListener(new View.OnClickListener() {

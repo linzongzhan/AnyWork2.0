@@ -1,0 +1,490 @@
+# view AndroidManifest.xml #generated:50
+-keep class android.arch.lifecycle.ProcessLifecycleOwnerInitializer { <init>(...); }
+
+# view res/layout/activity_change_info.xml #generated:2
+# view res/layout/activity_change_info2.xml #generated:2
+# view res/layout/activity_change_password.xml #generated:2
+# view res/layout/activity_collection.xml #generated:2
+# view res/layout/activity_feedback.xml #generated:2
+# view res/layout/activity_grade.xml #generated:10
+# view res/layout/activity_grade.xml #generated:2
+# view res/layout/activity_main.xml #generated:2
+# view res/layout/activity_new_organization.xml #generated:2
+# view res/layout/activity_notice.xml #generated:2
+# view res/layout/activity_search.xml #generated:2
+# view res/layout/activity_test.xml #generated:10
+# view res/layout/activity_workout.xml #generated:2
+# view res/layout/dialog_help.xml #generated:2
+# view res/layout/dialog_notice.xml #generated:3
+# view res/layout/fragment_analysis.xml #generated:2
+# view res/layout/fragment_home.xml #generated:124
+# view res/layout/fragment_home.xml #generated:164
+# view res/layout/fragment_home.xml #generated:2
+# view res/layout/fragment_home.xml #generated:249
+# view res/layout/fragment_home.xml #generated:45
+# view res/layout/fragment_home.xml #generated:84
+# view res/layout/fragment_login.xml #generated:2
+# view res/layout/fragment_my.xml #generated:2
+# view res/layout/fragment_ranking.xml #generated:2
+# view res/layout/fragment_register.xml #generated:2
+# view res/layout/fragment_workout_catalog.xml #generated:2
+# view res/layout/item_notice.xml #generated:2
+# view res/layout/item_notice.xml #generated:42
+# view res/layout/item_ranking.xml #generated:2
+# view res/layout/item_workout_chapter.xml #generated:2
+# view res/layout/item_workout_chapter.xml #generated:22
+# view res/layout/item_workout_info.xml #generated:2
+# view res/layout/item_workout_info.xml #generated:25
+# view res/layout/layout_forget_password.xml #generated:2
+# view res/layout/new_dialog_organization.xml #generated:2
+# view res/layout/view_workout.xml #generated:2
+-keep class android.support.constraint.ConstraintLayout { <init>(...); }
+
+# view res/layout/fragment_register.xml #generated:204
+-keep class android.support.constraint.Guideline { <init>(...); }
+
+# view res/layout/design_bottom_navigation_item.xml #generated:26
+-keep class android.support.design.internal.BaselineLayout { <init>(...); }
+
+# view res/layout/design_navigation_item.xml #generated:17
+-keep class android.support.design.internal.NavigationMenuItemView { <init>(...); }
+
+# view res/layout/design_navigation_menu.xml #generated:17
+-keep class android.support.design.internal.NavigationMenuView { <init>(...); }
+
+# view res/layout/design_layout_snackbar_include.xml #generated:18
+-keep class android.support.design.internal.SnackbarContentLayout { <init>(...); }
+
+# view res/layout/fragment_inform.xml #generated:8
+-keep class android.support.design.widget.AppBarLayout { <init>(...); }
+
+# view res/layout/activity_main.xml #generated:11
+-keep class android.support.design.widget.BottomNavigationView { <init>(...); }
+
+# view res/layout/design_text_input_password_icon.xml #generated:18
+-keep class android.support.design.widget.CheckableImageButton { <init>(...); }
+
+# view res/layout/design_bottom_sheet_dialog.xml #generated:26
+-keep class android.support.design.widget.CoordinatorLayout { <init>(...); }
+
+# view res/layout/design_layout_snackbar.xml #generated:18
+# view sw600dp-v13\res/layout-sw600dp-v13/design_layout_snackbar.xml #generated:18
+-keep class android.support.design.widget.Snackbar$SnackbarLayout { <init>(...); }
+
+# view res/layout/activity_paper.xml #generated:29
+-keep class android.support.design.widget.TabLayout { <init>(...); }
+
+# view res/layout/activity_paper.xml #generated:38
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/activity_home.xml #generated:2
+-keep class android.support.v4.widget.DrawerLayout { <init>(...); }
+
+# view res/layout/abc_alert_dialog_material.xml #generated:41
+-keep class android.support.v4.widget.NestedScrollView { <init>(...); }
+
+# view res/layout/fragment_inform.xml #generated:25
+# view res/layout/fragment_organization.xml #generated:9
+# view res/layout/fragment_paper.xml #generated:8
+-keep class android.support.v4.widget.SwipeRefreshLayout { <init>(...); }
+
+# view res/layout/abc_select_dialog_material.xml #generated:23
+-keep class android.support.v7.app.AlertController$RecycleListView { <init>(...); }
+
+# view res/layout/abc_action_menu_item_layout.xml #generated:17
+-keep class android.support.v7.view.menu.ActionMenuItemView { <init>(...); }
+
+# view res/layout/abc_expanded_menu_layout.xml #generated:17
+-keep class android.support.v7.view.menu.ExpandedMenuView { <init>(...); }
+
+# view res/layout/abc_list_menu_item_layout.xml #generated:17
+# view res/layout/abc_popup_menu_item_layout.xml #generated:17
+-keep class android.support.v7.view.menu.ListMenuItemView { <init>(...); }
+
+# view res/layout/abc_screen_toolbar.xml #generated:27
+# view v26\res/layout-v26/abc_screen_toolbar.xml #generated:27
+-keep class android.support.v7.widget.ActionBarContainer { <init>(...); }
+
+# view res/layout/abc_action_mode_bar.xml #generated:19
+# view res/layout/abc_screen_toolbar.xml #generated:43
+# view v26\res/layout-v26/abc_screen_toolbar.xml #generated:44
+-keep class android.support.v7.widget.ActionBarContextView { <init>(...); }
+
+# view res/layout/abc_screen_toolbar.xml #generated:17
+# view v26\res/layout-v26/abc_screen_toolbar.xml #generated:17
+-keep class android.support.v7.widget.ActionBarOverlayLayout { <init>(...); }
+
+# view res/layout/abc_action_menu_layout.xml #generated:17
+-keep class android.support.v7.widget.ActionMenuView { <init>(...); }
+
+# view res/layout/abc_activity_chooser_view.xml #generated:19
+-keep class android.support.v7.widget.ActivityChooserView$InnerLayout { <init>(...); }
+
+# view res/layout/abc_alert_dialog_material.xml #generated:18
+-keep class android.support.v7.widget.AlertDialogLayout { <init>(...); }
+
+# view res/layout/fragment_login.xml #generated:72
+# view res/layout/fragment_login.xml #generated:99
+# view res/layout/fragment_register.xml #generated:123
+# view res/layout/fragment_register.xml #generated:150
+# view res/layout/fragment_register.xml #generated:177
+# view res/layout/fragment_register.xml #generated:69
+# view res/layout/fragment_register.xml #generated:96
+-keep class android.support.v7.widget.AppCompatEditText { <init>(...); }
+
+# view res/layout/abc_alert_dialog_button_bar_material.xml #generated:26
+# view watch-v20\res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml #generated:18
+-keep class android.support.v7.widget.ButtonBarLayout { <init>(...); }
+
+# view res/layout/activity_change_info.xml #generated:36
+# view res/layout/activity_change_info2.xml #generated:35
+# view res/layout/activity_change_password.xml #generated:61
+# view res/layout/activity_grade.xml #generated:61
+# view res/layout/activity_test.xml #generated:2
+# view res/layout/activity_welcome.xml #generated:9
+# view res/layout/fragment_home.xml #generated:33
+# view res/layout/item_notice.xml #generated:27
+# view res/layout/item_notice.xml #generated:9
+# view res/layout/item_workout_chapter.xml #generated:8
+# view res/layout/item_workout_info.xml #generated:10
+# view res/layout/item_workout_info.xml #generated:78
+-keep class android.support.v7.widget.CardView { <init>(...); }
+
+# view res/layout/abc_screen_content_include.xml #generated:19
+-keep class android.support.v7.widget.ContentFrameLayout { <init>(...); }
+
+# view res/layout/abc_alert_dialog_title_material.xml #generated:45
+# view watch-v20\res/layout-watch-v20/abc_alert_dialog_title_material.xml #generated:44
+-keep class android.support.v7.widget.DialogTitle { <init>(...); }
+
+# view res/layout/abc_screen_simple_overlay_action_mode.xml #generated:23
+-keep class android.support.v7.widget.FitWindowsFrameLayout { <init>(...); }
+
+# view res/layout/abc_dialog_title_material.xml #generated:22
+# view res/layout/abc_screen_simple.xml #generated:17
+-keep class android.support.v7.widget.FitWindowsLinearLayout { <init>(...); }
+
+# view res/layout/activity_collection.xml #generated:51
+# view res/layout/activity_grade.xml #generated:22
+# view res/layout/activity_notice.xml #generated:48
+# view res/layout/activity_search.xml #generated:48
+# view res/layout/fragment_home.xml #generated:232
+# view res/layout/fragment_inform.xml #generated:32
+# view res/layout/fragment_organization.xml #generated:13
+# view res/layout/fragment_paper.xml #generated:13
+# view res/layout/fragment_ranking.xml #generated:71
+# view res/layout/fragment_workout_catalog.xml #generated:11
+# view res/layout/view_workout.xml #generated:54
+-keep class android.support.v7.widget.RecyclerView { <init>(...); }
+
+# view res/layout/abc_search_view.xml #generated:75
+-keep class android.support.v7.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# view res/layout/abc_screen_toolbar.xml #generated:36
+# view res/layout/activity_collection.xml #generated:9
+# view res/layout/activity_feedback.xml #generated:19
+# view res/layout/activity_grade.xml #generated:99
+# view res/layout/activity_new_organization.xml #generated:20
+# view res/layout/activity_notice.xml #generated:9
+# view res/layout/activity_paper.xml #generated:12
+# view res/layout/activity_search.xml #generated:10
+# view res/layout/activity_searching.xml #generated:10
+# view res/layout/fragment_analysis.xml #generated:8
+# view res/layout/fragment_inform.xml #generated:15
+# view res/layout/fragment_workout_catalog.xml #generated:20
+# view v26\res/layout-v26/abc_screen_toolbar.xml #generated:37
+-keep class android.support.v7.widget.Toolbar { <init>(...); }
+
+# view res/layout/abc_screen_simple.xml #generated:25
+# view res/layout/abc_screen_simple_overlay_action_mode.xml #generated:32
+-keep class android.support.v7.widget.ViewStubCompat { <init>(...); }
+
+# view res/layout/abc_alert_dialog_button_bar_material.xml #generated:43
+# view res/layout/abc_alert_dialog_material.xml #generated:52
+# view res/layout/abc_alert_dialog_material.xml #generated:66
+# view res/layout/abc_alert_dialog_title_material.xml #generated:56
+# view watch-v20\res/layout-watch-v20/abc_alert_dialog_title_material.xml #generated:53
+-keep class android.widget.Space { <init>(...); }
+
+# view AndroidManifest.xml #generated:17
+-keep class com.qgstudio.anywork.StartActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:43
+-keep class com.qgstudio.anywork.collection.CollectionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:33
+-keep class com.qgstudio.anywork.common.NetworkStatusReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:16
+-keep class com.qgstudio.anywork.enter.EnterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:25
+-keep class com.qgstudio.anywork.exam.ExamActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:29
+-keep class com.qgstudio.anywork.feedback.FeedbackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:23
+-keep class com.qgstudio.anywork.grade.GradeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:24
+-keep class com.qgstudio.anywork.main.HomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:30
+-keep class com.qgstudio.anywork.main.NewOrganizationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:28
+-keep class com.qgstudio.anywork.main.SearchingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:38
+-keep class com.qgstudio.anywork.notice.NoticeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:26
+-keep class com.qgstudio.anywork.paper.PaperActivity { <init>(...); }
+
+# view res/layout/fragment_ranking.xml #generated:39
+-keep class com.qgstudio.anywork.ranking.ArrowsView { <init>(...); }
+
+# view AndroidManifest.xml #generated:41
+-keep class com.qgstudio.anywork.search.SearchActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:39
+-keep class com.qgstudio.anywork.user.AppService { <init>(...); }
+
+# view AndroidManifest.xml #generated:32
+-keep class com.qgstudio.anywork.user.ChangeInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:31
+-keep class com.qgstudio.anywork.user.ChangePasswordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:27
+-keep class com.qgstudio.anywork.user.UserActivity { <init>(...); }
+
+# view res/layout/activity_exam.xml #generated:7
+-keep class com.qgstudio.anywork.widget.ExamPagerView { <init>(...); }
+
+# view res/layout/activity_workout.xml #generated:9
+# view res/layout/fragment_analysis.xml #generated:33
+# view res/layout/fragment_question.xml #generated:15
+# view res/layout/item_collection.xml #generated:2
+-keep class com.qgstudio.anywork.widget.QuestionView { <init>(...); }
+
+# view AndroidManifest.xml #generated:42
+-keep class com.qgstudio.anywork.workout.WorkoutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:40
+-keep class com.qgstudio.anywork.workout.WorkoutContainerActivity { <init>(...); }
+
+# view res/layout/activity_notice.xml #generated:38
+-keep class com.scwang.smartrefresh.layout.SmartRefreshLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:49
+-keep class com.tencent.bugly.beta.tinker.TinkerResultService { <init>(...); }
+
+# view AndroidManifest.xml #generated:15
+-keep class com.tencent.bugly.beta.ui.BetaActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:46
+-keep class com.tencent.bugly.beta.utils.BuglyFileProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+-keep class com.tencent.tinker.lib.service.DefaultTinkerResultService { <init>(...); }
+
+# view AndroidManifest.xml #generated:51
+-keep class com.tencent.tinker.lib.service.TinkerPatchService$IntentServiceRunner { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class com.tencent.tinker.lib.service.TinkerPatchService$IntentServiceRunner$InnerService { <init>(...); }
+
+# view AndroidManifest.xml #generated:53
+-keep class com.tencent.tinker.lib.service.TinkerPatchService$JobServiceRunner { <init>(...); }
+
+# view AndroidManifest.xml #generated:81
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_00 { <init>(...); }
+
+# view AndroidManifest.xml #generated:91
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_00_T { <init>(...); }
+
+# view AndroidManifest.xml #generated:82
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_01 { <init>(...); }
+
+# view AndroidManifest.xml #generated:92
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_01_T { <init>(...); }
+
+# view AndroidManifest.xml #generated:83
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_02 { <init>(...); }
+
+# view AndroidManifest.xml #generated:93
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_02_T { <init>(...); }
+
+# view AndroidManifest.xml #generated:84
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_03 { <init>(...); }
+
+# view AndroidManifest.xml #generated:85
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_04 { <init>(...); }
+
+# view AndroidManifest.xml #generated:86
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_05 { <init>(...); }
+
+# view AndroidManifest.xml #generated:87
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_06 { <init>(...); }
+
+# view AndroidManifest.xml #generated:88
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_07 { <init>(...); }
+
+# view AndroidManifest.xml #generated:89
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_08 { <init>(...); }
+
+# view AndroidManifest.xml #generated:90
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_09 { <init>(...); }
+
+# view AndroidManifest.xml #generated:68
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_00 { <init>(...); }
+
+# view AndroidManifest.xml #generated:78
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_00_T { <init>(...); }
+
+# view AndroidManifest.xml #generated:69
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_01 { <init>(...); }
+
+# view AndroidManifest.xml #generated:79
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_01_T { <init>(...); }
+
+# view AndroidManifest.xml #generated:70
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_02 { <init>(...); }
+
+# view AndroidManifest.xml #generated:80
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_02_T { <init>(...); }
+
+# view AndroidManifest.xml #generated:71
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_03 { <init>(...); }
+
+# view AndroidManifest.xml #generated:72
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_04 { <init>(...); }
+
+# view AndroidManifest.xml #generated:73
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_05 { <init>(...); }
+
+# view AndroidManifest.xml #generated:74
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_06 { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_07 { <init>(...); }
+
+# view AndroidManifest.xml #generated:76
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_08 { <init>(...); }
+
+# view AndroidManifest.xml #generated:77
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_09 { <init>(...); }
+
+# view AndroidManifest.xml #generated:94
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_00 { <init>(...); }
+
+# view AndroidManifest.xml #generated:104
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_00_T { <init>(...); }
+
+# view AndroidManifest.xml #generated:95
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_01 { <init>(...); }
+
+# view AndroidManifest.xml #generated:105
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_01_T { <init>(...); }
+
+# view AndroidManifest.xml #generated:96
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_02 { <init>(...); }
+
+# view AndroidManifest.xml #generated:106
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_02_T { <init>(...); }
+
+# view AndroidManifest.xml #generated:97
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_03 { <init>(...); }
+
+# view AndroidManifest.xml #generated:98
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_04 { <init>(...); }
+
+# view AndroidManifest.xml #generated:99
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_05 { <init>(...); }
+
+# view AndroidManifest.xml #generated:100
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_06 { <init>(...); }
+
+# view AndroidManifest.xml #generated:101
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_07 { <init>(...); }
+
+# view AndroidManifest.xml #generated:102
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_08 { <init>(...); }
+
+# view AndroidManifest.xml #generated:103
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_09 { <init>(...); }
+
+# view AndroidManifest.xml #generated:55
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_00 { <init>(...); }
+
+# view AndroidManifest.xml #generated:65
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_00_T { <init>(...); }
+
+# view AndroidManifest.xml #generated:56
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_01 { <init>(...); }
+
+# view AndroidManifest.xml #generated:66
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_01_T { <init>(...); }
+
+# view AndroidManifest.xml #generated:57
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_02 { <init>(...); }
+
+# view AndroidManifest.xml #generated:67
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_02_T { <init>(...); }
+
+# view AndroidManifest.xml #generated:58
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_03 { <init>(...); }
+
+# view AndroidManifest.xml #generated:59
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_04 { <init>(...); }
+
+# view AndroidManifest.xml #generated:60
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_05 { <init>(...); }
+
+# view AndroidManifest.xml #generated:61
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_06 { <init>(...); }
+
+# view AndroidManifest.xml #generated:62
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_07 { <init>(...); }
+
+# view AndroidManifest.xml #generated:63
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_08 { <init>(...); }
+
+# view AndroidManifest.xml #generated:64
+-keep class com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_09 { <init>(...); }
+
+# view AndroidManifest.xml #generated:13
+-keep class com.tinkerpatch.sdk.loader.TinkerPatchReflectApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:45
+-keep class com.tinkerpatch.sdk.server.utils.ReportBroadCast { <init>(...); }
+
+# view AndroidManifest.xml #generated:44
+-keep class com.tinkerpatch.sdk.tinker.service.TinkerServerResultService { <init>(...); }
+
+# view res/layout/book_loading.xml #generated:8
+-keep class com.victor.loading.book.BookView { <init>(...); }
+
+# view res/layout/newton_cradle_loading.xml #generated:14
+# view res/layout/newton_cradle_loading.xml #generated:20
+# view res/layout/newton_cradle_loading.xml #generated:26
+# view res/layout/newton_cradle_loading.xml #generated:32
+# view res/layout/newton_cradle_loading.xml #generated:7
+-keep class com.victor.loading.newton.CradleBall { <init>(...); }
+
+# view res/layout/loading_view.xml #generated:6
+-keep class com.victor.loading.newton.NewtonCradleLoading { <init>(...); }
+
+# view res/layout/activity_change_info.xml #generated:154
+# view res/layout/activity_change_info2.xml #generated:152
+# view res/layout/activity_person.xml #generated:15
+# view res/layout/dialog_origanization.xml #generated:7
+# view res/layout/drawer_header.xml #generated:15
+# view res/layout/fragment_my.xml #generated:28
+# view res/layout/item_organization.xml #generated:9
+# view res/layout/item_paper.xml #generated:9
+# view res/layout/item_ranking.xml #generated:40
+-keep class de.hdodenhof.circleimageview.CircleImageView { <init>(...); }
+

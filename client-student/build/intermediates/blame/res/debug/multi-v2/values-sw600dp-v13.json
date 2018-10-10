@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\linzongzhan\\AndroidStudioProjects\\AnyWork\\client-student\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "outputFile": "D:\\AndroidStudioProjects\\AnyWork\\client-student\\build\\intermediates\\res\\merged\\debug\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\linzongzhan\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.0.aar\\633996fc44825da19b54bcd7835910fd\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
@@ -35,7 +35,7 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\linzongzhan\\AndroidStudioProjects\\AnyWork\\client-student\\build\\intermediates\\res\\merged\\debug\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "outputFile": "D:\\AndroidStudioProjects\\AnyWork\\client-student\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\linzongzhan\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.0.aar\\633996fc44825da19b54bcd7835910fd\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",

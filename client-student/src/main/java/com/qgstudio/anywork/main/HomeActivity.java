@@ -47,6 +47,7 @@ import com.qgstudio.anywork.utils.ToastUtil;
 import com.qgstudio.anywork.websocket.ThreadMode;
 import com.qgstudio.anywork.websocket.WS;
 import com.qgstudio.anywork.websocket.WebSocketHolder;
+import com.tencent.bugly.beta.Beta;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -86,7 +87,6 @@ public class HomeActivity extends DialogManagerActivity implements BottomNavigat
         String baseUrl = "ws://" + RetrofitClient.RETROFIT_CLIENT.getRetrofit().baseUrl().host() + ":" +
                 RetrofitClient.RETROFIT_CLIENT.getRetrofit().baseUrl().port();
         WebSocketHolder.getDefault().connect(baseUrl + "/websocket/" + App.getInstance().getUser().getUserId());
-
     }
 
     @Override
