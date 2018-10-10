@@ -132,14 +132,19 @@ public class ChapterAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                     Date endD = getDate(endTime);
 
                     long now = System.currentTimeMillis();
-                    if (now < createD.getTime()) {
-                        ToastUtil.showToast("未到达考试时间");
-                        return;
+
+                    //只有在考试不是完成状态才需要
+                    if (testpaper.getStatus()!= Testpaper.STATUS_DONE) {
+                        if (now < createD.getTime()) {
+                            ToastUtil.showToast("未到达考试时间");
+                            return;
+                        }
+                        if (now > endD.getTime()) {
+                            ToastUtil.showToast("考试时间已截止");
+                            return;
+                        }
                     }
-                    if (now > endD.getTime()) {
-                        ToastUtil.showToast("考试时间已截止");
-                        return;
-                    }
+
                     LoadingDialog dialog = new LoadingDialog();
                     dialog.show(((AppCompatActivity) context).getSupportFragmentManager(), "");
                     intoTestActivity(v.getContext(), testpaper.getTestpaperId(), testpaper.getTestpaperTitle(), 1, dialog, testpaper.getStatus());
