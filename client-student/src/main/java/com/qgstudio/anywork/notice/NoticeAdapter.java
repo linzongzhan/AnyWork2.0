@@ -228,7 +228,7 @@ NoticeAdapter extends RecyclerView.Adapter<NoticeAdapter.ViewHolder> {
         public NewBaseDialog create(View.OnClickListener listener) {
             return new NewBaseDialog.Builder((DialogManagerActivity) context, -2)
                     .view(root)
-                    .setPositiveListener("退出", listener)
+                    .setPositiveListener("确定", listener)
                     .cancelTouchout(true)
                     .build();
         }
